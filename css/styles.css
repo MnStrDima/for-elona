@@ -1,0 +1,107 @@
+/* ДОБАВИТЬ ШРИФТЫ И ПРОСМОТРЕТЬ КОММЕНТАРИИ ДАЛЕЕ!!! */
+
+#achievements {
+    position: relative;
+    width: 1920px;
+    padding: 75px 0 75px;
+    background: no-repeat top 27px right url('/img/Logo.svg'), #F5F5F5;
+}
+
+.achievements-list {
+    margin: 0;
+    padding: 0;
+list-style: none;
+}
+
+.achievement {
+    margin:0;
+    background: #047235;
+    border-radius: 0px 100px 100px 0px;
+}
+
+#achievement1 {
+    width: 574px;
+}
+
+#achievement2 {
+    margin-top: 34px;
+    width: 744px;
+}
+
+#achievement3 {
+    margin-top: 34px;
+    width: 944px;
+}
+
+#achievement4 {
+    margin-top: 34px;
+    width: 1144px;
+}
+
+#achievement5 {
+    margin-top: 26px;
+    width: 1344px;
+}
+
+#achievement6 {
+    margin-top: 26px;
+    width: 1544px;
+}
+
+.achievement-count {
+font-style: normal;
+font-weight: 800;
+font-size: 50px;
+line-height: 1.12;
+margin: 0;
+}
+
+.achievement-count_description {
+font-style: normal;
+font-weight: 800;
+font-size: 28px;
+line-height: 1.12;
+margin: 0;
+}
+
+.achievement-count__wrapper{
+    display: block;
+    padding: 10px 0 19px;
+    text-align: center;
+    width: 255px;
+    border-radius: 100px;
+    margin: 0 0 0 auto;
+    color: #fff;
+}
+
+.achievement-count__wrapper:hover {
+    background: #59B730;
+}
+
+/* !!!!!!!! Надо изменить на max-width: 573px !!!!!!! */
+
+.achievement-about {
+    position: absolute;
+    top: 7%;
+    right: 19%;
+    max-width: 473px; 
+    text-align: left;
+}
+
+.achievement-about__title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 38px;
+    line-height: 1.21;
+    color:#424242;
+}
+
+.achievement-about__description {
+    margin: 21px 0 0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 1.23;
+    color:#424242;
+}
