@@ -4,7 +4,7 @@
 .template {
     height: auto;
     width:1920px;
-    padding: 75px;
+    padding: 75px 0 75px;
     background-color: tomato;
 }
 
