@@ -4,7 +4,7 @@ const listToShow = document.querySelectorAll('.achievement');
 const onEntry = entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
-      listToShow.forEach((el, index) => setTimeout(() => el.classList.add('visible'), 50 * index));
+      listToShow.forEach((el, index) => setTimeout(() => el.classList.add('visible'), 150 * index));
     }
     if (!entry.isIntersecting) {
       [...listToShow]
