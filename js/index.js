@@ -58,4 +58,4 @@ const itemClickHandler = e => {
   aboutDescriptionRef.textContent = listItemFiller[e.currentTarget.id].description;
 };
 
-listToShow.forEach(el => el.addEventListener('click', e => itemClickHandler(e)));
+listToShow.forEach(el => el.addEventListener('mouseenter', e => itemClickHandler(e)));
