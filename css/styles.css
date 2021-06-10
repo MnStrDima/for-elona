@@ -19,7 +19,14 @@
     position: relative;
     width: 1920px;
     padding: 75px 0 75px;
-    background: no-repeat top 27px right url('../img/Logo.svg'), #F5F5F5;
+    overflow: hidden;
+    /* background: no-repeat top 27px right url('../img/Logo.svg'), #F5F5F5; */
+}
+
+.background-svg{
+    position: absolute;
+    top: 27px;
+    right:-5px;
 }
 
 .achievements-list {
@@ -128,4 +135,168 @@ margin: 0;
     font-size: 21px;
     line-height: 1.23;
     color:#424242;
+}
+
+@keyframes circleAnime {
+    0% {
+        transform: scale(0);
+    }
+    15% {
+    transform: scale(0);
+    }
+    20%{
+        transform: scale(1);
+    }
+
+    95% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+
+.motion0 {
+   transform-origin: center;
+   animation: circleAnime 8000ms ease-in-out 0ms infinite;
+}
+.motion1 {
+    animation: myAnime1 8000ms ease-in-out 0ms infinite;
+}
+.motion2 {
+    animation: myAnime2 8000ms ease-in-out 0ms infinite;
+}
+.motion3 {
+    animation: myAnime3 8000ms ease-in-out 0ms infinite;
+}
+.motion4 {
+    animation: myAnime4 8000ms ease-in-out 0ms infinite;
+}
+.motion5 {
+    animation: myAnime5 8000ms ease-in-out 0ms infinite;
+}
+.motion6 {
+    animation: myAnime6 8000ms ease-in-out 0ms infinite;
+}
+
+@keyframes myAnime1 {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes myAnime2 {
+    0% {
+        opacity: 0;
+    }
+
+    35% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes myAnime3 {
+    0% {
+        opacity: 0;
+    }
+
+45% {
+    opacity: 0;
+}
+    50% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes myAnime4 {
+    0% {
+        opacity: 0;
+    }
+
+    55% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes myAnime5 {
+    0% {
+        opacity: 0;
+    }
+
+    65% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes myAnime6 {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 1;
+    }
+
+    95% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }

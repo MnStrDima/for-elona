@@ -59,3 +59,6 @@ const itemClickHandler = e => {
 };
 
 listToShow.forEach(el => el.addEventListener('mouseenter', e => itemClickHandler(e)));
+
+const logoRefs = document.querySelectorAll('.st0');
+[...logoRefs].forEach((el, index) => el.classList.add(`motion${index}`));
