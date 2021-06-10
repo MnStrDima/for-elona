@@ -165,27 +165,27 @@ margin: 0;
 
 .motion0 {
    transform-origin: center;
-   animation: circleAnime 9000ms ease-in-out 0ms infinite;
+   animation: circleAnime 6000ms ease-in-out 0ms infinite;
 }
 .motion1 {
-    animation: myAnime1 9000ms ease-in-out 0ms infinite;
+    animation: myAnime1 6000ms ease-in-out 0ms infinite;
 }
 .motion2 {
-    animation: myAnime2 9000ms ease-in-out 0ms infinite;
+    animation: myAnime2 6000ms ease-in-out 0ms infinite;
 }
 .motion3 {
-    animation: myAnime3 9000ms ease-in-out 0ms infinite;
+    animation: myAnime3 6000ms ease-in-out 0ms infinite;
 }
 .motion4 {
-    animation: myAnime4 9000ms ease-in-out 0ms infinite;
+    animation: myAnime4 6000ms ease-in-out 0ms infinite;
 }
 .motion5 {
     transform-origin: 75% 30%;
-    animation: myAnime5 9000ms ease-in-out 0ms infinite;
+    animation: myAnime5 6000ms ease-in-out 0ms infinite;
 }
 .motion6 {
     transform-origin: 25% 70%;
-    animation: myAnime6 9000ms ease-in-out 0ms infinite;
+    animation: myAnime6 6000ms ease-in-out 0ms infinite;
 }
 
 @keyframes myAnime1 {
