@@ -139,20 +139,25 @@ margin: 0;
 
 @keyframes circleAnime {
     0% {
+        opacity: 0;
         transform: scale(0);
     }
-    15% {
+    5% {
+        opacity: 0;
     transform: scale(0);
     }
-    20%{
+    10%{
+        opacity: 1;
         transform: scale(1);
     }
 
     95% {
+        opacity: 1;
         transform: scale(1);
     }
 
     100% {
+        opacity: 0;
         transform: scale(0);
     }
 }
@@ -160,36 +165,38 @@ margin: 0;
 
 .motion0 {
    transform-origin: center;
-   animation: circleAnime 8000ms ease-in-out 0ms infinite;
+   animation: circleAnime 9000ms ease-in-out 0ms infinite;
 }
 .motion1 {
-    animation: myAnime1 8000ms ease-in-out 0ms infinite;
+    animation: myAnime1 9000ms ease-in-out 0ms infinite;
 }
 .motion2 {
-    animation: myAnime2 8000ms ease-in-out 0ms infinite;
+    animation: myAnime2 9000ms ease-in-out 0ms infinite;
 }
 .motion3 {
-    animation: myAnime3 8000ms ease-in-out 0ms infinite;
+    animation: myAnime3 9000ms ease-in-out 0ms infinite;
 }
 .motion4 {
-    animation: myAnime4 8000ms ease-in-out 0ms infinite;
+    animation: myAnime4 9000ms ease-in-out 0ms infinite;
 }
 .motion5 {
-    animation: myAnime5 8000ms ease-in-out 0ms infinite;
+    transform-origin: 75% 30%;
+    animation: myAnime5 9000ms ease-in-out 0ms infinite;
 }
 .motion6 {
-    animation: myAnime6 8000ms ease-in-out 0ms infinite;
+    transform-origin: 25% 70%;
+    animation: myAnime6 9000ms ease-in-out 0ms infinite;
 }
 
 @keyframes myAnime1 {
     0% {
         opacity: 0;
     }
-    25% {
+    20% {
         opacity: 0;
     }
 
-    30% {
+    22% {
         opacity: 1;
     }
 
@@ -206,10 +213,10 @@ margin: 0;
         opacity: 0;
     }
 
-    35% {
+    34% {
         opacity: 0;
     }
-    40% {
+    36% {
         opacity: 1;
     }
 
@@ -226,7 +233,7 @@ margin: 0;
         opacity: 0;
     }
 
-45% {
+48% {
     opacity: 0;
 }
     50% {
@@ -246,10 +253,10 @@ margin: 0;
         opacity: 0;
     }
 
-    55% {
+    62% {
         opacity: 0;
     }
-    60% {
+    64% {
         opacity: 1;
     }
 
@@ -264,39 +271,49 @@ margin: 0;
 @keyframes myAnime5 {
     0% {
         opacity: 0;
+        transform: scale(0);
     }
 
-    65% {
+    76% {
         opacity: 0;
+        transform: scale(0);
     }
-    70% {
+    78% {
         opacity: 1;
+        transform: scale(1);
     }
 
     95% {
         opacity: 1;
+        transform: scale(1);
     }
 
     100% {
         opacity: 0;
+        transform: scale(0);
     }
 }
 @keyframes myAnime6 {
     0% {
         opacity: 0;
+        transform: scale(0);
     }
 
-    75% {
+    88% {
         opacity: 0;
+        transform: scale(0);
     }
-    80% {
+    90% {
         opacity: 1;
+        transform: scale(1);
     }
 
     95% {
         opacity: 1;
+        transform: scale(1);
     }
     100% {
         opacity: 0;
+        transform: scale(0);
     }
 }
