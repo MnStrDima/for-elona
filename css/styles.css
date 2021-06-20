@@ -52,6 +52,10 @@ transform: translateX(0%);
     background: #59B730;
 }
 
+.achievement-active {
+    background: #59B730;
+}
+
 #achievement1 {
     width: 574px;
 }

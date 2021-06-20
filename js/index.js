@@ -1,31 +1,30 @@
 const listItemFiller = {
   achievement1: {
-    title: 'НВП Продекологія - лідер у галузі проектування та виробництва',
+    title: '27 років досвіду та іновацій -',
     description:
-      'магнітних, електростатичних, вихреструмових сепараторів металодетекторів та магнітних освітлювачів-грязьовиків на пострадянському просторі та у Східній Європі',
+      'запорука високої якості, надійності та ефективності обладнання виробництва НВФ “Продекологія”.',
   },
   achievement2: {
-    title: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit.',
-    description: 'Ab itaque enim doloribus blanditiis illum atque!',
+    title: 'Продукцію фірми поставлено',
+    description: 'в 46 країн, на 3 континенти 4-х частин світу.',
   },
   achievement3: {
-    title: 'Explicabo sapiente perspiciatis magnam, repellendus nam',
-    description: 'pariatur odit dolor recusandae in aspernatur dignissimos cum?',
+    title: 'Обладнання НВФ “Продекологія” успішно експлуатується',
+    description: 'на підприємствах 58 галузей та підгалузей промисловості.',
   },
   achievement4: {
-    title: 'Repellendus in eius eveniet, aliquam perspiciatis nihil ratione.',
+    title:
+      'Фізико-хімічна, технологічна лабораторії, лабораторії електростатичної сепарації та магнітних досліджень',
     description:
-      'Necessitatibus asperiores quis voluptatem, possimus, tempora nobis, doloremque porro facere voluptatum minima saepe velit.',
+      'забезпечені усім необхідним обладнанням та апаратурою для проведення досліджень різних матеріалів.',
   },
   achievement5: {
-    title: 'Voluptatibus debitis laboriosam atque doloribus dolores aliquam facere.',
-    description:
-      'Sequi qui facilis velit cum dignissimos hic pariatur sunt inventore minima numquam dolorem, aliquam dolor molestias provident totam.',
+    title: 'Фірма активно займається патентуванням технічних рішень,',
+    description: 'що використовуються в конструкціях обладнання.',
   },
   achievement6: {
-    title: 'Neque delectus hic distinctio? Neque modi quam veritatis odit',
-    description:
-      'dicta nostrum magnam voluptatum quod perspiciatis incidunt. Voluptas adipisci harum recusandae ipsa, veniam voluptatibus culpa quos aliquid in nostrum',
+    title: 'Висока кваліфікація та професіоналізм кожного працівника фірми -',
+    description: 'запорука надійності та ефективності обладнання фірми.',
   },
 };
 
@@ -54,11 +53,16 @@ const observer = new IntersectionObserver(onEntry, {
 observer.observe(scrollHelperRef);
 
 const itemClickHandler = e => {
+  [...e.currentTarget.closest('ul').children].forEach(el => {
+    el.children[0].classList.remove('achievement-active');
+  });
   aboutTitleRef.textContent = listItemFiller[e.currentTarget.id].title;
   aboutDescriptionRef.textContent = listItemFiller[e.currentTarget.id].description;
+  Object.entries(listItemFiller).forEach(el => {
+    if (el[1].title === aboutTitleRef.textContent.trim()) {
+      e.currentTarget.children[0].classList.add('achievement-active');
+    }
+  });
 };
 
-listToShow.forEach(el => el.addEventListener('mouseenter', e => itemClickHandler(e)));
-
-const logoRefs = document.querySelectorAll('.st0');
-[...logoRefs].forEach((el, index) => el.classList.add(`motion${index}`));
+[...listToShow].forEach(el => el.addEventListener('mouseenter', e => itemClickHandler(e)));
