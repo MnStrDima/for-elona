@@ -78,17 +78,17 @@ const mainImgRef = document.querySelector('#main-img');
 prevBtnRef.addEventListener('click', onClickSetPrevImage);
 
 function onClickSetPrevImage(e) {
-  e.currentTarget.dataset.bgImage = '../img/prodekologiya2002.png';
+  e.currentTarget.dataset.bgImage = 'prodekologiya2002';
   e.currentTarget.style.backgroundImage = `linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)),
-    url(${e.currentTarget.dataset.bgImage})`;
+    url("../img/${e.currentTarget.dataset.bgImage}.png")`;
 }
 
 nextBtnRef.addEventListener('click', onClickSetNextImage);
 
 function onClickSetNextImage(e) {
-  e.currentTarget.dataset.bgImage = '../img/prodekologiya2000.png';
+  e.currentTarget.dataset.bgImage = 'prodekologiya2000';
   e.currentTarget.style.backgroundImage = `linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)),
-    url(${e.currentTarget.dataset.bgImage})`;
+    url("../img/${e.currentTarget.dataset.bgImage}.png")`;
 }
 
 console.log(mainImgRef.dataset.src);
