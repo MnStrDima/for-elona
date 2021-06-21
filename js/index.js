@@ -66,3 +66,29 @@ const itemClickHandler = e => {
 };
 
 [...listToShow].forEach(el => el.addEventListener('mouseenter', e => itemClickHandler(e)));
+
+const prevBtnRef = document.querySelector('.prev-slide');
+const nextBtnRef = document.querySelector('.next-slide');
+const mainImgRef = document.querySelector('#main-img');
+// prevBtnRef.style.backgroundImage = `linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)),
+//     url(${prevBtnRef.dataset.bgImage})`;
+// nextBtnRef.style.backgroundImage = `linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)),
+//     url(${nextBtnRef.dataset.bgImage})`;
+
+prevBtnRef.addEventListener('click', onClickSetPrevImage);
+
+function onClickSetPrevImage(e) {
+  e.currentTarget.dataset.bgImage = '../img/prodekologiya2002.png';
+  e.currentTarget.style.backgroundImage = `linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)),
+    url(${e.currentTarget.dataset.bgImage})`;
+}
+
+nextBtnRef.addEventListener('click', onClickSetNextImage);
+
+function onClickSetNextImage(e) {
+  e.currentTarget.dataset.bgImage = '../img/prodekologiya2000.png';
+  e.currentTarget.style.backgroundImage = `linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)),
+    url(${e.currentTarget.dataset.bgImage})`;
+}
+
+console.log(mainImgRef.dataset.src);
