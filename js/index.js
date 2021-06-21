@@ -80,7 +80,7 @@ prevBtnRef.addEventListener('click', onClickSetPrevImage);
 function onClickSetPrevImage(e) {
   e.currentTarget.dataset.bgImage = 'prodekologiya2002';
   e.currentTarget.style.backgroundImage = `linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)),
-    url("../img/${e.currentTarget.dataset.bgImage}.png")`;
+    url("/img/${e.currentTarget.dataset.bgImage}.png")`;
 }
 
 nextBtnRef.addEventListener('click', onClickSetNextImage);
@@ -88,7 +88,7 @@ nextBtnRef.addEventListener('click', onClickSetNextImage);
 function onClickSetNextImage(e) {
   e.currentTarget.dataset.bgImage = 'prodekologiya2000';
   e.currentTarget.style.backgroundImage = `linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)),
-    url("../img/${e.currentTarget.dataset.bgImage}.png")`;
+    url("/img/${e.currentTarget.dataset.bgImage}.png")`;
 }
 
 console.log(mainImgRef.dataset.src);
