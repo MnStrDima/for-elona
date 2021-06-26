@@ -3,7 +3,7 @@
 /* Удалить секцио template!!! Это для демонстрации выезжающего списка. */
 .template {
     height: auto;
-    width:1920px;
+    width: 1920px;
     padding: 75px 0 75px;
     background-color: tomato;
 }
@@ -23,20 +23,20 @@
     /* background: no-repeat top 27px right url('../img/Logo.svg'), #F5F5F5; */
 }
 
-.background-svg{
+.background-svg {
     position: absolute;
     top: 27px;
-    right:-5px;
+    right: -5px;
 }
 
 .achievements-list {
     margin: 0;
     padding: 0;
-list-style: none;
+    list-style: none;
 }
 
 .achievement {
-    margin:0;
+    margin: 0;
     background: #047235;
     border-radius: 0px 100px 100px 0px;
     transform: translateX(-100%);
@@ -44,11 +44,10 @@ list-style: none;
 }
 
 .achievement.visible {
-transform: translateX(0%);
+    transform: translateX(0%);
 }
 
-.achievement:hover >
-.achievement-count__wrapper {
+.achievement:hover>.achievement-count__wrapper {
     background: #59B730;
 }
 
@@ -86,22 +85,22 @@ transform: translateX(0%);
 }
 
 .achievement-count {
-font-style: normal;
-font-weight: 800;
-font-size: 50px;
-line-height: 1.12;
-margin: 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 1.12;
+    margin: 0;
 }
 
 .achievement-count_description {
-font-style: normal;
-font-weight: 800;
-font-size: 28px;
-line-height: 1.12;
-margin: 0;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 1.12;
+    margin: 0;
 }
 
-.achievement-count__wrapper{
+.achievement-count__wrapper {
     display: block;
     padding: 10px 0 19px;
     text-align: center;
@@ -119,7 +118,7 @@ margin: 0;
     position: absolute;
     top: 7%;
     right: 19%;
-    max-width: 473px; 
+    max-width: 473px;
     text-align: left;
 }
 
@@ -129,7 +128,7 @@ margin: 0;
     font-weight: 800;
     font-size: 38px;
     line-height: 1.21;
-    color:#424242;
+    color: #424242;
 }
 
 .achievement-about__description {
@@ -138,7 +137,7 @@ margin: 0;
     font-weight: normal;
     font-size: 21px;
     line-height: 1.23;
-    color:#424242;
+    color: #424242;
 }
 
 @keyframes circleAnime {
@@ -146,11 +145,13 @@ margin: 0;
         opacity: 0;
         transform: scale(0);
     }
+
     5% {
         opacity: 0;
-    transform: scale(0);
+        transform: scale(0);
     }
-    10%{
+
+    10% {
         opacity: 1;
         transform: scale(1);
     }
@@ -168,25 +169,31 @@ margin: 0;
 
 
 .motion0 {
-   transform-origin: center;
-   animation: circleAnime 6000ms ease-in-out 0ms infinite;
+    transform-origin: center;
+    animation: circleAnime 6000ms ease-in-out 0ms infinite;
 }
+
 .motion1 {
     animation: myAnime1 6000ms ease-in-out 0ms infinite;
 }
+
 .motion2 {
     animation: myAnime2 6000ms ease-in-out 0ms infinite;
 }
+
 .motion3 {
     animation: myAnime3 6000ms ease-in-out 0ms infinite;
 }
+
 .motion4 {
     animation: myAnime4 6000ms ease-in-out 0ms infinite;
 }
+
 .motion5 {
     transform-origin: 75% 30%;
     animation: myAnime5 6000ms ease-in-out 0ms infinite;
 }
+
 .motion6 {
     transform-origin: 25% 70%;
     animation: myAnime6 6000ms ease-in-out 0ms infinite;
@@ -196,6 +203,7 @@ margin: 0;
     0% {
         opacity: 0;
     }
+
     20% {
         opacity: 0;
     }
@@ -211,10 +219,12 @@ margin: 0;
     98% {
         opacity: 0;
     }
+
     100% {
         opacity: 0;
     }
 }
+
 @keyframes myAnime2 {
     0% {
         opacity: 0;
@@ -223,6 +233,7 @@ margin: 0;
     34% {
         opacity: 0;
     }
+
     36% {
         opacity: 1;
     }
@@ -234,18 +245,21 @@ margin: 0;
     98% {
         opacity: 0;
     }
+
     100% {
         opacity: 0;
     }
 }
+
 @keyframes myAnime3 {
     0% {
         opacity: 0;
     }
 
-48% {
-    opacity: 0;
-}
+    48% {
+        opacity: 0;
+    }
+
     50% {
         opacity: 1;
     }
@@ -257,10 +271,12 @@ margin: 0;
     98% {
         opacity: 0;
     }
+
     100% {
         opacity: 0;
     }
 }
+
 @keyframes myAnime4 {
     0% {
         opacity: 0;
@@ -269,6 +285,7 @@ margin: 0;
     62% {
         opacity: 0;
     }
+
     64% {
         opacity: 1;
     }
@@ -280,10 +297,12 @@ margin: 0;
     98% {
         opacity: 0;
     }
+
     100% {
         opacity: 0;
     }
 }
+
 @keyframes myAnime5 {
     0% {
         opacity: 0;
@@ -294,6 +313,7 @@ margin: 0;
         opacity: 0;
         transform: scale(0);
     }
+
     78% {
         opacity: 1;
         transform: scale(1);
@@ -308,10 +328,12 @@ margin: 0;
         opacity: 0;
         transform: scale(0);
     }
+
     100% {
         opacity: 0;
     }
 }
+
 @keyframes myAnime6 {
     0% {
         opacity: 0;
@@ -322,6 +344,7 @@ margin: 0;
         opacity: 0;
         transform: scale(0);
     }
+
     90% {
         opacity: 1;
         transform: scale(1);
@@ -331,27 +354,31 @@ margin: 0;
         opacity: 1;
         transform: scale(1);
     }
+
     98% {
         opacity: 0;
         transform: scale(0);
     }
+
     100% {
         opacity: 0;
     }
 }
 
-.timeline-slider{
+.timeline-slider {
     width: 1920px;
     height: 866px;
     /* padding: 105px 0 85px; */
     padding: 0 0 85px;
     background: #FAFAFA;
 }
-.slider-wrapper{
+
+.slider-wrapper {
     display: flex;
     justify-content: center;
 }
-.main-slide{
+
+.main-slide {
     position: relative;
     width: 836px;
     height: 434px;
@@ -366,20 +393,23 @@ margin: 0;
     width: 475px;
 
 }
+
 .prev-slide {
     background-image: linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)),
-    url("../img/prodekologiya2000.png");
+        url("../img/prodekologiya2000.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .next-slide {
     background-image: linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)),
-    url("../img/prodekologiya2002.png");
+        url("../img/prodekologiya2002.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
 .slide-info {
     position: absolute;
     left: 0;
@@ -414,10 +444,10 @@ margin: 0;
     color: #FFFFFF;
 }
 
-.slide-description{
+.slide-description {
     /* width: 674px; */
     width: 550px;
-    margin:0 0 0 49px;
+    margin: 0 0 0 49px;
     font-style: normal;
     font-weight: normal;
     font-size: 18px;
@@ -425,7 +455,7 @@ margin: 0;
     color: #212121;
 }
 
-.timeline-points-list{
+.timeline-points-list {
     position: relative;
     display: flex;
     list-style: none;
@@ -434,6 +464,7 @@ margin: 0;
     height: 63px;
     transform: translateX(-15px);
 }
+
 .timeline-points-list::before {
     content: '';
     position: absolute;
@@ -445,7 +476,7 @@ margin: 0;
 
 }
 
-.timeline-point{
+.timeline-point {
     position: relative;
     width: 192px;
     display: flex;
@@ -459,9 +490,9 @@ margin: 0;
 }
 
 .timeline-point:hover {
-font-size: 28px;
-line-height: 34px;
-color: #047235;
+    font-size: 28px;
+    line-height: 34px;
+    color: #047235;
 }
 
 .active.timeline-point {
@@ -470,7 +501,7 @@ color: #047235;
     color: #047235;
 }
 
-.timeline-point::before{
+.timeline-point::before {
     content: '';
     position: absolute;
     top: -7px;
@@ -498,4 +529,16 @@ color: #047235;
     width: 2000px;
     height: 6px;
     background: #047235;
+}
+
+
+.carousel-cell::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8));
+    z-index: 10;
 }

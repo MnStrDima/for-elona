@@ -67,28 +67,23 @@ const itemClickHandler = e => {
 
 [...listToShow].forEach(el => el.addEventListener('mouseenter', e => itemClickHandler(e)));
 
-const prevBtnRef = document.querySelector('.prev-slide');
-const nextBtnRef = document.querySelector('.next-slide');
-const mainImgRef = document.querySelector('#main-img');
-// prevBtnRef.style.backgroundImage = `linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)),
-//     url(${prevBtnRef.dataset.bgImage})`;
-// nextBtnRef.style.backgroundImage = `linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)),
-//     url(${nextBtnRef.dataset.bgImage})`;
+//////////////////////////////////////////////////
 
-prevBtnRef.addEventListener('click', onClickSetPrevImage);
+// const navDotsRef = document.querySelector('.timeline-points-list');
 
-function onClickSetPrevImage(e) {
-  e.currentTarget.dataset.bgImage = 'prodekologiya2002';
-  e.currentTarget.style.backgroundImage = `linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)),
-    url("../img/${e.currentTarget.dataset.bgImage}.png")`;
-}
-
-nextBtnRef.addEventListener('click', onClickSetNextImage);
-
-function onClickSetNextImage(e) {
-  e.currentTarget.dataset.bgImage = 'prodekologiya2000';
-  e.currentTarget.style.backgroundImage = `linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8)),
-    url("../img/${e.currentTarget.dataset.bgImage}.png")`;
-}
-
-console.log(mainImgRef.dataset.src);
+// const slider = tns({
+//   container: '.splide__list',
+//   mode: 'carousel',
+//   items: 2,
+//   gutter: 66,
+//   fixedWidth: 630,
+//   viewportMax: 1920,
+//   speed: 500,
+//   slideBy: 1,
+//   center: true,
+//   controls: false,
+//   navPosition: 'bottom',
+//   navContainer: navDotsRef,
+//   navAsThumbnails: true,
+//   arrowKeys: true,
+// });

@@ -1,0 +1,245 @@
+/* .carousel-wrapper {
+    padding: 105px 0 85px;
+    width: 1920px;
+    height: 866px;
+    background: #FAFAFA;
+} */
+
+/* .carousel {
+    width: 1920px;
+    height: 866px;
+    background: #FAFAFA;
+} */
+.splide__list{
+    width: 1920px;
+    height: 715px;
+
+}
+
+.splide__slide__container {
+        /* display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%; */
+}
+
+.splide__slide.item-top-wrapper {
+    height: 715px;
+}
+
+.slider-item-wrapper {
+    position: relative;
+    margin: 105px 0 88px;
+
+}
+
+.item-top-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.carousel-cell.is-selected {
+    /* width: 836px; */
+    height: 522px;
+    margin-right: 67px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.carousel-cell.is-selected .slide-info {
+    /* position: absolute;
+    left: 0;
+    bottom: -88px; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    /* margin: 22px auto 88px; */
+    padding: 0;
+    background: #FAFAFA;
+}
+
+.slide-year {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 41px;
+    color: #212121;
+    margin: 0;
+}
+
+/* .slide-year.prev {
+    position: absolute;
+    top: 42%;
+    left: 26%;
+    color: #FFFFFF;
+} */
+
+/* .slide-year.next {
+    position: absolute;
+    top: 42%;
+    right: 26%;
+    color: #FFFFFF;
+} */
+
+/* .slide-description {
+    /* width: 674px; */
+    /* width: 550px; */
+    /* margin: 0 0 0 49px; */
+    /* font-style: normal; */
+    /* font-weight: normal; */
+    /* font-size: 18px; */
+    /* line-height: 22px; */
+    /* color: #212121; */
+/* } */ 
+
+/* .carousel-cell:not(.is-selected) { */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-right: 67px; */
+    /* height: 522px; */
+    /* width: 475px; */
+    /* width: 836px; */
+/* } */
+
+.splide__slide .slide-description {
+    display: none;
+}
+
+.splide__slide.tns-slide-active .slide-description {
+    display: block;
+}
+
+.splide__slide .slide-year {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+}
+
+.splide__slide.tns-slide-active .slide-year {
+    position: static;
+}
+
+/* .carousel-cell:not(.is-selected)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(33, 33, 33, 0.8), rgba(33, 33, 33, 0.8));
+    z-index: 10;
+} */
+
+/* .carousel-cell img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+/* .slide-info {
+position: absolute;
+left: 0;
+bottom: -88px;
+display: flex;
+justify-content: left;
+align-items: center;
+margin: 22px auto 88px;
+padding: 0;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+.timeline-points-list {
+    position: relative;
+    display: flex;
+    list-style: none;
+    margin: 0 0 85px;
+    padding: 0;
+    height: 63px;
+    transform: translateX(-15px);
+}
+
+.timeline-points-list::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 1935px;
+    height: 8px;
+    background: #59B730;
+
+}
+
+.timeline-point {
+    position: relative;
+    width: 192px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 26px;
+    color: #212121;
+    transition: font-size 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.timeline-point:hover {
+    font-size: 28px;
+    line-height: 34px;
+    color: #047235;
+}
+
+.tns-nav-active.timeline-point {
+    font-size: 28px;
+    line-height: 34px;
+    color: #047235;
+}
+
+.timeline-point::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    width: 2px;
+    height: 14px;
+    background: #047235;
+}
+
+.timeline-point::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(0, -3px);
+    width: 2000px;
+    height: 6px;
+    background: transparent;
+}
+
+.tns-nav-active.timeline-point::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate(-95px, -3px);
+    width: 2000px;
+    height: 6px;
+    background: #047235;
+    transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
