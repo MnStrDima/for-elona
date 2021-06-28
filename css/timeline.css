@@ -1,4 +1,4 @@
-.tns-outer {
+/* .tns-outer {
     padding: 0 !important
 }
 
@@ -176,7 +176,7 @@
 
 
 /* /////////////////////////////////////////////////////// */
-.splide {
+/* .splide {
     overflow-x: hidden;
 }
 
@@ -311,10 +311,10 @@ transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 41px;
     color: #212121;
     margin: 0;
-}
+} */
 
 /* ////////////////////  timeline styles //////////////// */
-.timeline-points-list {
+/* .timeline-points-list {
     position: relative;
     display: flex;
     list-style: none;
@@ -393,4 +393,4 @@ transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
     height: 6px;
     background: #047235;
     transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
