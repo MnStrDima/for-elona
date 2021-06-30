@@ -17,13 +17,15 @@
 
 #achievements {
     position: relative;
+    box-sizing: border-box;
     width: 1920px;
     padding: 75px 0 75px;
     overflow: hidden;
-    /* background: no-repeat top 27px right url('../img/Logo.svg'), #F5F5F5; */
+    background-color: #F5F5F5;
 }
 
 .background-svg {
+    display: block;
     position: absolute;
     top: 27px;
     right: -5px;
@@ -118,7 +120,7 @@
     position: absolute;
     top: 7%;
     right: 19%;
-    max-width: 473px;
+    width: 573px;
     text-align: left;
 }
 
@@ -138,6 +140,126 @@
     font-size: 21px;
     line-height: 1.23;
     color: #424242;
+}
+
+@media screen and (max-width: 999px) {
+    #achievements {
+        width: 320px;
+        padding: 350px 20px 40px 0;
+        background-color: #FFFFFF;
+    }
+
+    #achievement1 {
+        width: 150px;
+    }
+
+    #achievement2 {
+        margin-top: 10px;
+        width: 180px;
+    }
+
+    #achievement3 {
+        margin-top: 10px;
+        width: 210px;
+    }
+
+    #achievement4 {
+        margin-top: 10px;
+        width: 240px;
+    }
+
+    #achievement5 {
+        margin-top: 10px;
+        width: 270px;
+    }
+
+    #achievement6 {
+        margin-top: 10px;
+        width: 300px;
+    }
+
+    .background-svg {
+        display: none;
+    }
+
+    .achievement-count {
+        font-size: 28px;
+    }
+
+    .achievement-count_description {
+        font-size: 16px;
+    }
+
+    .achievement-count__wrapper {
+        padding: 4px 0 9px;
+        width: 130px;
+    }
+
+    .achievement-about {
+        position: absolute;
+        top: 36px;
+        left: 21px;
+        width: 279px;
+        text-align: left;
+    }
+
+    .achievement-about__title {
+        width: 245px;
+        font-size: 21px;
+        line-height: 1.23;
+    }
+
+    .achievement-about__description {
+        margin: 17px 0 0;
+        font-size: 18px;
+        line-height: 1.22;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1920px) {
+    #achievements {
+        width: 1000px;
+        padding: 75px 38px 75px 0;
+        background-color: #F5F5F5;
+    }
+
+    #achievement1 {
+        width: 230px;
+    }
+
+    #achievement2 {
+        margin-top: 34px;
+        width: 360px;
+    }
+
+    #achievement3 {
+        margin-top: 34px;
+        width: 510px;
+    }
+
+    #achievement4 {
+        margin-top: 34px;
+        width: 660px;
+    }
+
+    #achievement5 {
+        margin-top: 26px;
+        width: 812px;
+    }
+
+    #achievement6 {
+        margin-top: 26px;
+        width: 962px;
+    }
+
+    .achievement-about {
+        top: 59px;
+        right: 7px;
+    }
+    .background-svg {
+        top: 27px;
+        left: 648px;
+    }
 }
 
 @keyframes circleAnime {
@@ -180,21 +302,27 @@
 .motion2 {
     animation: myAnime2 6000ms ease-in-out 0ms infinite;
 }
-
 .motion3 {
-    animation: myAnime3 6000ms ease-in-out 0ms infinite;
+    animation: myAnime2 6000ms ease-in-out 0ms infinite;
 }
 
 .motion4 {
+    animation: myAnime3 6000ms ease-in-out 0ms infinite;
+}
+.motion5 {
+    animation: myAnime3 6000ms ease-in-out 0ms infinite;
+}
+
+.motion6 {
     animation: myAnime4 6000ms ease-in-out 0ms infinite;
 }
 
-.motion5 {
+.motion7 {
     transform-origin: 75% 30%;
     animation: myAnime5 6000ms ease-in-out 0ms infinite;
 }
 
-.motion6 {
+.motion8 {
     transform-origin: 25% 70%;
     animation: myAnime6 6000ms ease-in-out 0ms infinite;
 }
