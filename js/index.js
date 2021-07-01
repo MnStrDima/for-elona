@@ -28,12 +28,13 @@ const listItemFiller = {
   },
 };
 
+const achievementsSectionRef = document.querySelector('#achievements');
 const aboutTitleRef = document.querySelector('.achievement-about__title');
 const aboutDescriptionRef = document.querySelector('.achievement-about__description');
 const listItemWrapperRef = document.querySelector('.achievement-count__wrapper ');
-const scrollHelperRef = document.querySelector('#scroll-helper');
 const listToShow = document.querySelectorAll('.achievement');
 const svgImageRef = document.querySelectorAll('.st0');
+
 ////////////////////////////////
 [...svgImageRef].forEach((el, index) => {
   if (window.screen.width < 1920) {
@@ -58,24 +59,11 @@ const onEntry = entries => {
 };
 
 ////////////////////////////
-let rootMarginVariable;
-if (window.screen.width <= 400) {
-  rootMarginVariable = '70px';
-}
-if (window.screen.width > 400 && window.screen.width < 1000) {
-  rootMarginVariable = '170px';
-}
-if (window.screen.width >= 1000 && window.screen.width < 1500) {
-  rootMarginVariable = '500px';
-}
-if (window.screen.width >= 1500) {
-  rootMarginVariable = '550px';
-}
-
 const observer = new IntersectionObserver(onEntry, {
-  rootMargin: `${rootMarginVariable}`,
+  rootMargin: '-50%',
 });
-observer.observe(scrollHelperRef);
+
+observer.observe(achievementsSectionRef);
 
 /////////////////////////////////
 const itemClickHandler = e => {

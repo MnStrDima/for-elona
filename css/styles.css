@@ -7,6 +7,21 @@
     padding: 75px 0 75px;
     background-color: tomato;
 }
+@media screen and (max-width: 500px) {
+    .template {
+        width: 320px;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .template {
+        width: 700px;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .template {
+        width: 1000px;
+    }
+}
 
 #scroll-helper {
     position: absolute;
