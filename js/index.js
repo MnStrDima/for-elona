@@ -37,7 +37,7 @@ const svgImageRef = document.querySelectorAll('.st0');
 
 ////////////////////////////////
 [...svgImageRef].forEach((el, index) => {
-  if (window.screen.width < 1920) {
+  if (window.screen.width < 1280) {
     el.classList.remove(`motion${index}`);
   } else {
     el.classList.add(`motion${index}`);
