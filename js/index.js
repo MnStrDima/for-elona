@@ -29,6 +29,7 @@ const listItemFiller = {
 };
 
 const achievementsSectionRef = document.querySelector('#achievements');
+const achievementAboutRef = document.querySelector('.achievement-about');
 const aboutTitleRef = document.querySelector('.achievement-about__title');
 const aboutDescriptionRef = document.querySelector('.achievement-about__description');
 const listItemWrapperRef = document.querySelector('.achievement-count__wrapper ');
@@ -70,13 +71,17 @@ const itemClickHandler = e => {
   [...e.currentTarget.closest('ul').children].forEach(el => {
     el.children[0].classList.remove('achievement-active');
   });
-  aboutTitleRef.textContent = listItemFiller[e.currentTarget.id].title;
-  aboutDescriptionRef.textContent = listItemFiller[e.currentTarget.id].description;
+  let target = e.currentTarget;
+  achievementAboutRef.classList.remove('visible');
+  setTimeout(()=> {
+  aboutTitleRef.textContent = listItemFiller[target.id].title;
+  aboutDescriptionRef.textContent = listItemFiller[target.id].description;
   Object.entries(listItemFiller).forEach(el => {
     if (el[1].title === aboutTitleRef.textContent.trim()) {
-      e.currentTarget.children[0].classList.add('achievement-active');
+      e.target.children[0].classList.add('achievement-active');
     }
   });
+    achievementAboutRef.classList.add('visible');}, 500)
 };
 
 [...listToShow].forEach(el => el.addEventListener('mouseenter', e => itemClickHandler(e)));
